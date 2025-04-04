@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+    width: 780px;
+    height: fit-content;
+    display: flex;
+}
+
+.show{
+    position: absolute;
+    align-self: center;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.show>span{
+    color: white;
+    font-weight: 700;
+    background-color: hsla(0, 0%, 0%, 0.233);
+    padding: 1rem;
+}
+
+img{
+    width: 780px;
+    height: 520px;
+}
+
+.before{
+    position: absolute;
+    width: 390px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: 0;
+    z-index: 1;
+}
+
+.slider{
+    position: absolute;
+    width: 780px;
+    height: 520px;
+    border: none;
+    cursor: grab;
+    z-index: +4;
+}

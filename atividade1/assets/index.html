@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Image Compare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <input class="slider" id="inp" type="range" max="780" min="0" value="390">
+        <div class="show">
+            <span class="beforeA">Before</span>
+            <span class="afterA">After</span>
+        </div>
+        <img src="./before.jpg" class="before" id="before">
+        <img src="./after.jpg" class="after" >
+    </div>
+</body>
+<script>
+    const inp = document.getElementById('inp');
+    const before = document.getElementById('before');
+
+    inp.addEventListener('input', () => {
+        const val = document.getElementById('inp').value
+        before.style.width=val+'px'
+    })
+</script>
+
+<!-- 50 minutos -->
+</html>
+
