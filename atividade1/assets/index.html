@@ -9,6 +9,7 @@
 <body>
     <div>
         <input class="slider" id="inp" type="range" max="780" min="0" value="390">
+        <img src="./splitter.svg" class="slidera" alt="">
         <div class="show">
             <span class="beforeA">Before</span>
             <span class="afterA">After</span>
@@ -20,10 +21,12 @@
 <script>
     const inp = document.getElementById('inp');
     const before = document.getElementById('before');
+    const slidera = document.querySelector('.slidera');
 
     inp.addEventListener('input', () => {
         const val = document.getElementById('inp').value
         before.style.width=val+'px'
+        slidera.style.left = (val-10) +'px'
     })
 </script>
 

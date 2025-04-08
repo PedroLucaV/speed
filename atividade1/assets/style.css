@@ -43,5 +43,13 @@ img{
     height: 520px;
     border: none;
     cursor: grab;
+    z-index: +99;
+    opacity: 0;
+}
+
+.slidera{
+    width: fit-content;
+    left: 380px;
+    position: absolute;
     z-index: +4;
 }
