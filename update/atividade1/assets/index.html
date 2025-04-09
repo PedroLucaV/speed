@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cont">
+        <input class="inp" type="range" min="0" max="1024" value="512px" name="" id="">
+        <div class="texts">
+            <span class="spanA">Before</span>
+            <span class="spanA">After</span>
+        </div>
+        <img src="./splitter.svg" class="splitter" alt="">
+        <div class="main">
+            <img class="before" src="./before.jpg" alt="">
+            <img class="after" src="./after.jpg" alt="">
+        </div>
+    </div>
+
+    <script>
+        const inp = document.querySelector('.inp')
+        const before = document.querySelector('.before')
+        const splitter = document.querySelector('.splitter')
+
+        inp.addEventListener('input', () => {
+            before.style.width = `${inp.value}px`
+            splitter.style.left = `${inp.value -24}px`
+        })
+    </script>
+</body>
+</html>

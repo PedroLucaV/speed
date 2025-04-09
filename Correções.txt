@@ -1,0 +1,5 @@
+Geral: Tente centralizar suas soluções. Agora que você já sabe fazer essas soluções tente refaz-las sem a necessidade de consulta dos prontos.
+
+Att01: Centralize a solução
+Att02: Utilize o Wrap para que as caixas não fugir do navegador
+Att03: Existe um bug na aplicação que não permite acresentar valores. digita 5 funciona depois digita 7 não funciona. porém, se for de maneira decrescente funciona. 
